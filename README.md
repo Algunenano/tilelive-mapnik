@@ -28,10 +28,11 @@ tilelive.load('mapnik:///path/to/file.xml', function(err, source) {
 
     // Interface is in XYZ/Google coordinates.
     // Use `y = (1 << z) - 1 - y` to flip TMS coordinates.
-    source.getTile(0, 0, 0, function(err, tile, headers) {
+    source.getTile(0, 0, 0, function(err, tile, headers, metrics) {
         // `err` is an error object when generation failed, otherwise null.
         // `tile` contains the compressed image file as a Buffer
         // `headers` is a hash with HTTP headers for the image.
+        // `metrics` if enabled contains an object with mapnik metrics
     });
 
     // The `.getGrid` is implemented accordingly.

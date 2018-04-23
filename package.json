@@ -29,7 +29,7 @@
     "dependencies": {
         "step": "~0.0.5",
         "generic-pool": "~2.4.0",
-        "@carto/mapnik": "3.6.2-carto.8",
+        "@carto/mapnik": "github:Algunenano/node-mapnik#cache_move",
         "mime": "~1.6.0",
         "sphericalmercator": "~1.0.4"
     },
